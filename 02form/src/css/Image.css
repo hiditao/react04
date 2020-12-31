@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.images {
+    width: 500px;
+    height: 400px;
+}
+
+.lunbo .pic li {
+    list-style: none;
+}
+
+.lunbo {
+    width: 500px;
+    height: 400px;
+    margin: 0 auto;
+    position: relative;
+}
+.lunbo .arrow {
+    width: 40px;
+    height: 70px;
+    background-color: rgba(0,0,0,.2);
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    line-height: 70px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.lunbo .left-arrow {
+    left: 0;
+}
+.lunbo .right-arrow {
+    right: 0;
+}

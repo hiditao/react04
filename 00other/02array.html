@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        let arr = [1,2,3,4,5];
+
+        // 第一次使用，参数1表示数组的第一个元素， 参数2表示数组的第二个元素
+        // 后面每一次使用：第一个参数表示上一次返回的结果，第二个参数表示当前元素
+        let res = arr.reduce((total, item)=> {
+            return total + item;  
+        });
+
+        console.log(res);
+
+
+        let list = [
+            {
+                id: 1,
+                price: 100
+            },
+            {
+                id: 1,
+                price: 300
+            },
+            {
+                id: 1,
+                price: 500
+            }
+        ];
+
+        let all = list.reduce((obj, item) => {
+            return {price: obj.price + item.price};
+        });
+        console.log(all);
+
+
+    </script>
+    
+</body>
+</html>
